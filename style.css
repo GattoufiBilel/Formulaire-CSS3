@@ -1,0 +1,123 @@
+body{
+  background-image: url(bg.jpg);
+  font-family: arial sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1{
+  font : 42px arial ;
+  text-align: center;
+  color: #146FA0;
+  margin: 0;
+}
+
+div{
+  width: 770px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  color: #777;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0  #fff ;
+}
+
+label {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 17px 0 7px ;
+  text-align: left;
+  text-shadow: 1px 1px 0 #fff ;
+
+}
+
+fieldset {
+  width: 250px ;
+  padding: 0 50px 50px;
+  margin: 10px;
+  float: left;
+  background-color: rgb(244,244,244,0.7) ;
+  border-style: double;
+  border-radius: 25px;
+  border-width: 3px;
+  border-color: #999;
+}
+#confirm {
+  padding-top: 10px;
+  float: none;
+  border-style: none ;
+  margin: 10px 0 ;
+  line-height: 15px;
+}
+
+#cf{
+  display: inline;
+  float: left;
+  margin: 15px 5px 0 ;
+}
+ legend {
+   font-size: 20px ;
+   font: bold ;
+   color: #999 ;
+   margin-left: 20px;
+   text-align: left;
+   padding: 0 10px;
+   text-shadow: 1px 1px 0 #ccc ;
+ }
+#textbox {
+  padding: 5px 10px ;
+  border-radius: 15px ;
+  border: 1px  solid  #fff ;
+  width: 200px ;
+  text-shadow: 1px 1px 1px #777 ;
+  background-image: linear-gradient(top,#E3E3E3 , #FFFFFF);
+
+}
+input:required{
+     background-image: url(required.png);
+     background-repeat: no-repeat;
+     background-position: 155px;
+     background-color: #F0F0EF ;
+ }
+input[type=submit] {
+   padding: 10px ;
+   margin: 0 10px ;
+   width: 300px ;
+ }
+
+input[type=text]:focus  , textarea , input[type=email]:focus , input[type=password]:focus {
+box-shadow: 7px 7px 2px #ccc ;
+text-shadow: 1px 1px 3px #777 ;
+}
+
+
+
+input[type=text]:required:valid , input[type=email]:required:valid , input[type=password]:required:valid {
+background-image: url(valid.png) ;
+background-repeat: no-repeat;
+background-position: 140px;
+}
+
+input[type=text]:required:invalid , input[type=email]:required:invalid , input[type=password]:required:invalid{
+  background-image: url(invalid.png) ;
+  background-repeat: no-repeat;
+  background-position: 140px;
+  }
+
+
+  p{
+    text-align: right;
+    display: block;
+    margin-top: -25px;
+  }
+
+input:focus{
+outline-style: none;
+}
+
+label , input[type=text] , input[type=mail] , imput[type=password] , textarea , fieldset,input[type=submit] {
+  display: block;
+}

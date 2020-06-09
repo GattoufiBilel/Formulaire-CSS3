@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>FORMULAIRE D'INSCRIPTION </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1> INSCRIPTION</h1>
+    <br><br><br>
+    <div class="form1">
+        <form class="" action="inde.html" method="post">
+
+            <fieldset>
+                <legend> Détails du compte</legend>
+
+                <label for="Username">Nom de l'utilisateur:</label><br>
+                <input type="text" id="fname" name="username" class="textbox" required="required" value="Username">
+                <br><br>
+
+                <label for="mp">Mot de passe:</label><br>
+                <input type="password" id="mp" name="password" value="password" class="textbox" required="required">
+                <br><br>
+
+                <label for="cmp">Confirmer Mot de passe</label><br>
+                <input type="password" id="cmp" name="cpassword" value="Re-type password" class="textbox" required="required">
+                <br><br> <br>
+
+                <label for="mail">Email : </label> <br>
+                <input type="email" id="mail" name="amil" value="exemple@email.com" class="textbox" required="required">
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Détails Personnels</legend>
+
+                <label for="website">Siet web : </label><br>
+                <input type="text" id="website" name="website" value="http://www.exemple.com" class="textbox" required="required">
+                <br><br>
+
+                <label for="age">Age:</label><br>
+                <input type="text" id="age" name="age" value="Age > 18 " class="textbox">
+                <br>
+
+                <label for="salaire">Salaire Mensuel:</label> <br>
+                <input type="range" min="100" max="1000" value="500" class="slider" id="myRange">
+                <p>10000</p>
+                <br>
+                <label for="description"> Description : </label>
+                <textarea id="description" name="description" rows="4" cols="30"> describe about yourself her 
+            </textarea>
+
+            </fieldset>
+
+            <fieldset class="confirm">
+                <input type="checkbox" name="acpt" class="cf"> J'accepte les <a href="condition.html">condition génèrales d'Utilisation</a>
+                <input type="submit" name="bt1" value="j'acceptes" class="cf">
+            </fieldset>
+
+
+        </form>
+    </div>
+</body>
+
+</html>
