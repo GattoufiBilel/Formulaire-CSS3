@@ -1,0 +1,70 @@
+
+
+legend{
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 5px;
+color: #999;
+margin-left: -20px ;
+text-align: left;
+padding: 0 10px ;
+text-shadow: 1px 1px 0 #ccc ;
+}
+
+#textbox , textarea{
+padding: 5px 10px;
+border-radius: 15px;
+border-width: 200px;
+border : 1px solid #fff ;
+text-shadow: 1px 1px 1px #777 ;
+box-shadow: 0px 2px 0px #999 ;
+background-image: linear-gradient(top,#E3E3E3,#FFFFFF);
+}
+
+
+input[type="submit"] {
+  padding: 10px;
+  margin: 0 10px !important ;
+  width: 300px;
+}
+
+.textbox:focus , textarea:focus {
+box-shadow: 7px 7px 2px #ccc ;
+text-shadow: 1px 1px 3px #777 ;
+}
+
+
+.textbox:required:focus{
+  background-image: url(required.png) ;
+  background-repeat: no-repeat;
+  background-position: 155px 2px ;
+  background-color: #F0F0EF;
+
+}
+
+.textbox:required:valid{
+  background-image: url(valid.png);
+  background-repeat: no-repeat;
+  background-position: 155px 2px ;
+  background-color: #F0F0EF ;
+}
+
+.textbox:required:invalid {
+  background-image: url(invalid.png);
+  background-repeat: no-repeat;
+  background-position: 155px 2px ;
+  background-color: #F0F0EF ;
+}
+
+p {
+  display: block;
+  text-align: right;
+  margin-top: -25px;
+}
+textarea{
+  width: 230px ;
+}
+
+input:focus{
+  outline-style: none ;
+}

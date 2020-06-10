@@ -1,123 +1,123 @@
-body{
+body {
   background-image: url(bg.jpg);
   font-family: arial sans-serif;
-  margin: 0;
-  padding: 0;
+  margin: 0 ;
+  padding: 0 ;
 }
-
 
 h1{
-  font : 42px arial ;
-  text-align: center;
-  color: #146FA0;
-  margin: 0;
+color: #146FA0;
+font-size: 42px;
+margin: 0 ;
+text-align: center;
 }
 
-div{
-  width: 770px;
-  margin: auto;
-  text-align: center;
-  display: block;
-  color: #777;
-  font-size: 17px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-shadow: 1px 1px 0  #fff ;
+div {
+width: 770px ;
+margin: auto;
+text-align: center;
+color: #777 ;
+font-size: 17px ;
+font-weight: bold;
+text-shadow: 1px 1px 0 #fff ;
 }
 
-label {
-  font-size: 17px;
+label{
+font-size: 17px;
+font-weight: bold;
+margin: 17px 0 7px;
+text-align: left;
+text-shadow: 1px 1px 0 #fff;
+}
+div > fieldset  {
+width: 250px;
+padding: 0 50px 50px ;
+margin: 10px ;
+float: left;
+background-color: rgb(244, 244, 244 , 0.7);
+border-radius: 25px;
+border-style: double;
+border-color: #999;
+border-width: 3px;
+}
+
+section fieldset{
+padding-top: 10px;
+float: none;
+border-style: none;
+line-height: 15px;
+margin: 10px 0 ;
+}
+
+section  {
+display: inline;
+float: left;
+margin: 15px 5px 0 ;
+}
+
+
+
+legend {
+  font-size: 20px;
   font-weight: bold;
-  margin: 17px 0 7px ;
+  letter-spacing: 5px ;
+  color: #999 ;
+  margin-left: 20px;
   text-align: left;
-  text-shadow: 1px 1px 0 #fff ;
-
+  padding: 0 10px ;
+  text-shadow: 1px 1px 1px red ;
 }
 
-fieldset {
-  width: 250px ;
-  padding: 0 50px 50px;
-  margin: 10px;
-  float: left;
-  background-color: rgb(244,244,244,0.7) ;
-  border-style: double;
-  border-radius: 25px;
-  border-width: 3px;
-  border-color: #999;
-}
-#confirm {
-  padding-top: 10px;
-  float: none;
-  border-style: none ;
-  margin: 10px 0 ;
-  line-height: 15px;
+.textbox , textarea {
+padding: 5px 10px ;
+border-radius: 15px;
+border: 1px solid #fff ;
+width: 200px ;
+text-shadow: 1px 1px 1px #777 ;
+box-shadow: 0px 2px 0px #999 ;
+background-image: linear-gradient(top,#E3E3E3,#FFFFFF);
 }
 
-#cf{
-  display: inline;
-  float: left;
-  margin: 15px 5px 0 ;
+.textbox:required{
+  background-image: url(required.png) ;
+  background-repeat: no-repeat;
+  background-position: 200px 5px ;
+  background-color: #F0F0EF ;
 }
- legend {
-   font-size: 20px ;
-   font: bold ;
-   color: #999 ;
-   margin-left: 20px;
-   text-align: left;
-   padding: 0 10px;
-   text-shadow: 1px 1px 0 #ccc ;
- }
-#textbox {
-  padding: 5px 10px ;
-  border-radius: 15px ;
-  border: 1px  solid  #fff ;
-  width: 200px ;
-  text-shadow: 1px 1px 1px #777 ;
-  background-image: linear-gradient(top,#E3E3E3 , #FFFFFF);
 
+input[type="submit"] , #btn {
+padding: 10px ;
+margin: 0 10px !important ;
+width: 300px ;
 }
-input:required{
-     background-image: url(required.png);
-     background-repeat: no-repeat;
-     background-position: 155px;
-     background-color: #F0F0EF ;
- }
-input[type=submit] {
-   padding: 10px ;
-   margin: 0 10px ;
-   width: 300px ;
- }
 
-input[type=text]:focus  , textarea , input[type=email]:focus , input[type=password]:focus {
-box-shadow: 7px 7px 2px #ccc ;
+.textbox:focus , textarea:focus  {
+box-shadow: 7px 7px 2px #ccc  ;
 text-shadow: 1px 1px 3px #777 ;
 }
 
-
-
-input[type=text]:required:valid , input[type=email]:required:valid , input[type=password]:required:valid {
-background-image: url(valid.png) ;
-background-repeat: no-repeat;
-background-position: 140px;
-}
-
-input[type=text]:required:invalid , input[type=email]:required:invalid , input[type=password]:required:invalid{
-  background-image: url(invalid.png) ;
+.textbox:required:valid{
+  background-image: url(valid.png) ;
   background-repeat: no-repeat;
-  background-position: 140px;
-  }
-
-
-  p{
-    text-align: right;
-    display: block;
-    margin-top: -25px;
-  }
-
-input:focus{
-outline-style: none;
+  background-position: 200px 5px ;
 }
 
-label , input[type=text] , input[type=mail] , imput[type=password] , textarea , fieldset,input[type=submit] {
-  display: block;
+.textbox:required:invalid{
+  background-image: url(invalid.png);
+  background-repeat: no-repeat;
+  background-position: 200px 5px ;
+}
+
+p {
+display: block;
+text-align: right;
+margin-top: -25px ;
+}
+
+textarea {
+  width: 230px;
+}
+
+.textbox:focus{
+  outline-style: none;
 }

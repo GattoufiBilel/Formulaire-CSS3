@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>inscription</title>
+  </head>
+  <body>
+
+<h1> Inscription </h1>
+
+<div class="fomrulaire">
+
+  <form class=""  method="post">
+
+<div>
+  <fieldset>
+    <legend>Detail de compte </legend>
+
+
+      <label for="username">Nom de l'utilisateur : </label>
+      <input type="text" class="textbox" name="username" required>
+
+      <br><br>
+
+      <label for="password">Mot de passe : </label>
+      <input type="password" class="textbox" name="password" required>
+
+      <br><br>
+
+      <label for="cpassword">Confirme Mot de passe : </label>
+      <input type="password" class="textbox" name="cpassword" required>
+      <br><br>
+
+      <label for="email"> Email : </label>
+      <input type="email" class="textbox" name="email" value="exemple@email.com" required>
+
+  </fieldset>
+
+  <fieldset>
+    <legend> detail personnels </legend>
+
+      <label for="siteweb">Site web : </label>
+      <input type="text" class="textbox" name="" value="http://site.com" required>
+
+      <br><br>
+
+      <label for="age">age :-</label>
+      <input type="text"  class="textbox" name="Age" value="18>age">
+
+      <br><br>
+
+      <label for="Mensuel">Mensuel : </label>
+      <input type="range"  name="salaire" min="100" max="1000">
+      <p> 1000 </p>
+
+      <br><br>
+
+      <label for="description"> Description: </label>
+      <textarea name="description" id="description" rows="3" cols="50"> describe about yourself her !
+      </textarea>
+
+  </fieldset>
+
+</div>
+
+<section>
+
+  <fieldset>
+
+    <input type="checkbox" name="accepter" id="cbx1"> <label for="accepter"> j'accepter les</label> <a href="condition.html">Condition générales d'utilisation </a>
+    <input type="submit" name="btn" id="btn" value="J'accepter">
+
+  </fieldset>
+
+</section>
+
+
+  </form>
+
+</div>
+
+  </body>
+</html>
